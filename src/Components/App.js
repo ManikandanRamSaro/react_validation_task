@@ -6,14 +6,15 @@ import Demo from './Demo';
 import Header from './Header';
 import Home from './Home';
 
+import Layout from './Layout';
 
 const App = () => { 
    return (
         <div> 
             <Header/>
             <BrowserRouter>
-              <div>
-                  <Route path="/" component={Home} exact />
+              <div >
+                  <Route path="/" component={Layout} exact />
               </div>
             </BrowserRouter>            
         </div>
