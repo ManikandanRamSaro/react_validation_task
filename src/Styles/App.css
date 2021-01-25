@@ -1,6 +1,4 @@
-.App {
-  text-align: center;
-}
+/* 
 
 .App-logo {
   height: 40vmin;
@@ -35,4 +33,17 @@
   to {
     transform: rotate(360deg);
   }
+} */ 
+.text-error
+{
+  color:red;
 }
+.text-success
+{
+  color:green;
+}
+input
+{
+  width: 200px!important;
+}
+ 
