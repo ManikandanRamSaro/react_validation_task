@@ -1,13 +1,12 @@
 import '../Styles/App.css';
 
+import '../Styles/w3.css';
 import {BrowserRouter,Route,Link} from 'react-router-dom';
-
-import Demo from './Demo';
+ 
 import Header from './Header';
-import Home from './Home';
-
-import Layout from './Layout';
+import Home from './Home'; 
 import PersonalInfo from './PersonalInfo';
+import PersonalInfoClass from './PersonalInfoClass';
 
 const Routes = [
   {
@@ -29,7 +28,7 @@ const App = () => {
                  <Header route={Routes}/>      
                   <Route path="/" component={Home} exact />
                   <Route path="/PersonalInformation" component={PersonalInfo} />
-                  <Route path="/PersonalInfo" component={Layout} />
+                  <Route path="/PersonalInfo" component={PersonalInfoClass} />
               </div>
             </BrowserRouter>            
         </div>

@@ -6,7 +6,7 @@ import InputAdornment from '@material-ui/core/InputAdornment';
 import TextField from '@material-ui/core/TextField';
 import { Button } from '@material-ui/core';
 import Helper from '../Helper/EventsHelper'; 
-import DoneIcon from '@material-ui/icons/Done';
+//import DoneIcon from '@material-ui/icons/Done';
 import ClearIcon from '@material-ui/icons/Clear';
 const PersonalInfo = () =>{
 
@@ -247,7 +247,7 @@ const PersonalInfo = () =>{
                         <TextField 
                             name="txtEmail" 
                             id="txtEmail"
-                            label="Email"
+                            label="Email ID"
                             value={email}
                             onChange={e=>{mapTextboxToVariables('EM',e,0,'','','NORMAL')}}                             
                             error={emailval.status}
@@ -264,7 +264,7 @@ const PersonalInfo = () =>{
                             <TextField 
                             name="txtConfirmEmail" 
                             id="txtConfirmEmail" 
-                            label="Confirm Email" 
+                            label="Confirm Email ID" 
                             value={confirmEmail}
                             onChange={e=>{mapTextboxToVariables('CEM',e,0,'','','NORMAL')}} 
                             error={cemailval.status}

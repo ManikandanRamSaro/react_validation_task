@@ -6,11 +6,11 @@ const Header = ({route}) =>{
 
     const paths = route.map( link =>{
         if(link.status===true){
-            return <Link to={link.route} key={link.id} className={link.route===currentPath ? 'w3-bar-item w3-button w3-green' : 'w3-bar-item w3-button' } onClick={e=>{setCurrentPath(link.route)}} >{link.displayName}</Link>
+            return <Link to={link.route} key={link.id} className={link.route===currentPath ? 'w3-bar-item w3-button w3-pale-blue' : 'w3-bar-item w3-button' } onClick={e=>{setCurrentPath(link.route)}} >{link.displayName}</Link>
         }
      });
     return (
-        <div className="w3-bar w3-light-grey"> 
+        <div className="w3-bar w3-blue"> 
             {paths}
         </div>
     );

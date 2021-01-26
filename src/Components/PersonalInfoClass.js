@@ -150,7 +150,7 @@ class PersonalInfoClass extends React.Component
                                 label="Confirm Email ID"
                                 value={values.confirmemail}
                                 onChange={handleChange}                                
-                                onKeyUp={e=>this.emailDiv(values.confirmemail)}
+                                onKeyUp={e=>this.SuccessStatus(false)}
                                 fullWidth
                                 />
                                 :null }
@@ -159,7 +159,7 @@ class PersonalInfoClass extends React.Component
                                 name="mobileNo"
                                 helperText={touched.mobileNo ? errors.mobileNo : ""}
                                 error={touched.mobileNo && Boolean(errors.mobileNo)}
-                                label="Mobile No"
+                                label="Phone no"
                                 type="number"
                                 value={values.mobileNo}
                                 onChange={handleChange}
