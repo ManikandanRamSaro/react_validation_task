@@ -10,7 +10,7 @@ const Home = () =>{
               
             </div>
             <div className="w3-container w3-half w3-hover-shadow w3-light-blue">
-            <Link to="/PersonalInfo"><h2>Personal Information using Class and third party plugin</h2>   </Link>
+            <Link to="/PersonalInfo"><h2>Personal Information using Class</h2>   </Link>
             </div>
             </div> 
         </div>
