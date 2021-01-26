@@ -1,9 +1,5 @@
 export default class EventHelper 
-{
-    constructor()
-    {
-
-    }
+{ 
 
     getValueByLastindex(inputtext,type)
     {
@@ -71,7 +67,7 @@ export default class EventHelper
             }
             else
             {
-                if(value==compare)
+                if(value===compare)
                 {
                     output = { status:false,message:`Valid ${objectName}`,type:typeofObject,ip:value,parent:objcode }
                 }
@@ -86,7 +82,7 @@ export default class EventHelper
             let status = this.getValueByLastindex(value,typeofObject);
             let maxSize=false;
               
-                if(value.length==maxlength)
+                if(value.length===maxlength)
                 {
                     maxSize=true;
                 }  

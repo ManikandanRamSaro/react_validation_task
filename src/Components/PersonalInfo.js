@@ -64,7 +64,7 @@ const PersonalInfo = () =>{
                             setFirstName(event.target.value);
                             setFNameval({status:false,message:'',css:''}); 
                         } 
-                        else if(input===false && firstName.length==1)
+                        else if(input===false && firstName.length===1)
                         {
                             setFirstName('');                
                             setFNameval({status:true,message:'First Name Required',css:''}); 
@@ -85,7 +85,7 @@ const PersonalInfo = () =>{
                             setLastName(event.target.value);                
                             setLNameval({status:false,message:'',css:''}); 
                         } 
-                        else if(input===false && lastName.length==1)
+                        else if(input===false && lastName.length===1)
                         {
                             setLastName('');                
                             setLNameval({status:true,message:'Last Name Required',css:''}); 
@@ -104,7 +104,7 @@ const PersonalInfo = () =>{
                             let input = supportClass.getValueByLastindex(event.target.value,'NUMBER') 
                             if(input===true && event.target.value.length<=maxlen){ 
                                 setPhoneNo(event.target.value);    
-                                if(event.target.value.length==maxlen) {
+                                if(event.target.value.length===maxlen) {
                                     setPhoneval({status:false,message:'',css:''}); 
                                 }
                                 else
@@ -112,7 +112,7 @@ const PersonalInfo = () =>{
                                     setPhoneval({status:true,message:'Please enter 10 digit of mobile number',css:''}); 
                                 }
                             } 
-                            else if(input===false && phoneNo.length==1)
+                            else if(input===false && phoneNo.length===1)
                             { 
                                 setPhoneNo('');                
                                 setPhoneval({status:true,message:'Phone Number Required',css:''}); 
@@ -209,8 +209,10 @@ const PersonalInfo = () =>{
     };
   
     return (
-      <div> 
-          <div className="w3-container">
+        <div className="w3-container"> 
+            <div className="w3-display-middle">
+             <div className="login-wrapper" >
+                <div className="box">
                 <div className="w3-panel form-layout" >
                     <form autoComplete="off" onSubmit={e=>{onSubmitting(e)}} >
                     
@@ -303,7 +305,8 @@ const PersonalInfo = () =>{
 
                 </div>
           </div>
-        
+        </div>
+      </div>
       </div>
     );
 }
